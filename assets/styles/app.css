@@ -14,51 +14,73 @@ body {
     color: #ddd;
 }
 
+
 a.active {
     color: #fff !important;
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #333; 
     color: white; 
     padding: 10px 0; 
     height: 150px;
+  }
+
+.cerca {
+    display: flex;
 }
 
-.dropdown:hover > .dropdown-menu {
-    display: block;
-    margin-top: .125rem;
+h1 {
+    color: #227e00;
+    text-align: center;
+    margin: 20px;
 }
 
-
-.dropend .dropdown-toggle{
-    margin-left: 1em;
+.products {
+    margin: 20px 0;
 }
-.dropdown-item:hover{
-    color: #fff;
-}
-@media screen and (min-width:992px) {
-    .dropend .dropdown-toggle{
-        margin-left: .5em;
-    }
-}
-.badge {
-    color: #ddd;
-}
-a.active > .badge {
-    color: #fff;
-}
-.badge:after{
-    content:attr(value);
-    font-size: 10px;
-    background: red;
-    border-radius: 50%;
-    padding: .19rem .375rem;
-    position: relative;
-    left: -8px;
-    top: -15px;
+.custom {  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid #333; */
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    margin-top: 10px;
     
 }
+.txt {
+    width: 50%;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.name > h3 {
+    margin: 0px;
+}
+.acquisto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acquisto > button {
+    margin-top: 1rem;
+    /* justify-self: end; */
+}
+
+
+/* .products > div > p {
+    text-align: left;
+}
+.products > div > h3 {
+    text-align: center;
+} */
+
+
